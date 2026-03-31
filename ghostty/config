@@ -1,5 +1,5 @@
 # Theme and appearance
-theme = Catppuccin Frappe
+theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 background-opacity = 1
 background-blur = true
 
@@ -9,10 +9,11 @@ macos-titlebar-proxy-icon = visible
 macos-titlebar-style = tabs
 
 # Font
-font-family = Inconsolata Nerd Font
-font-size = 20
+font-family = MesloLGL Nerd Font
+font-size = 17
 font-thicken = true
 font-thicken-strength = 96
+font-feature = -calt, -liga, -dlig
 
 # Cell and cursor sizing
 adjust-cell-width = -1
@@ -24,7 +25,6 @@ window-inherit-working-directory = true
 window-padding-balance = true
 
 # Split visuals
-unfocused-split-fill = #1e1e2e
 split-divider-color = #33aadd
 
 # Shell and cursor behavior
@@ -51,6 +51,39 @@ keybind = cmd+shift+l=resize_split:right,10
 
 # Keybindings: global
 keybind = global:cmd+ctrl+opt+shift+l=toggle_quick_terminal
+
+# macOS option key
+macos-option-as-alt = true
+
+# Vim mode: entry
+keybind = alt+v=activate_key_table:vim
+
+# Vim mode: scrolling
+keybind = vim/j=scroll_page_lines:1
+keybind = vim/k=scroll_page_lines:-1
+keybind = vim/ctrl+d=scroll_page_down
+keybind = vim/ctrl+u=scroll_page_up
+keybind = vim/ctrl+f=scroll_page_down
+keybind = vim/ctrl+b=scroll_page_up
+keybind = vim/shift+g=scroll_to_bottom
+keybind = vim/g>g=scroll_to_top
+keybind = vim/shift+j=scroll_page_down
+keybind = vim/shift+k=scroll_page_up
+
+# Vim mode: search
+keybind = vim/slash=start_search
+keybind = vim/n=navigate_search:next
+
+# Vim mode: copy
+keybind = vim/y=copy_to_clipboard
+
+# Vim mode: exit
+keybind = vim/escape=deactivate_key_table
+keybind = vim/q=deactivate_key_table
+keybind = vim/i=deactivate_key_table
+
+# Vim mode: catch unbound keys
+keybind = vim/catch_all=ignore
 
 # Clipboard and safety
 clipboard-paste-protection = false

@@ -114,10 +114,10 @@ return {
       })
     end,
     keys = {
-      { "<leader>ec", "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
-      { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
-      { "<leader>gc", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
-      { "<leader>gh", "<cmd>DiffviewFileHistory<cr>", desc = "File History" },
+      { "<leader>ec", "<cmd>DiffviewOpen<cr>", desc = "[E]ditor Open Diffview [C]hanges" },
+      { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "[G]it [D]iffview Open" },
+      { "<leader>gq", "<cmd>DiffviewClose<cr>", desc = "[G]it Diffview [Q]uit" },
+      { "<leader>gh", "<cmd>DiffviewFileHistory<cr>", desc = "[G]it File [H]istory" },
     },
   },
 }
