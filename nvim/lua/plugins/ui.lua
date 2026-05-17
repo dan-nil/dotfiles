@@ -1,11 +1,10 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      style = "storm",
-      light_style = "day",
+      style = "dark",
     },
   },
   {
@@ -16,18 +15,20 @@ return {
       update_interval = 3000,
       set_dark_mode = function()
         vim.o.background = "dark"
-        vim.cmd.colorscheme("tokyonight-storm")
+        require("onedark").setup({ style = "dark" })
+        require("onedark").load()
       end,
       set_light_mode = function()
         vim.o.background = "light"
-        vim.cmd.colorscheme("tokyonight-day")
+        require("onedark").setup({ style = "light" })
+        require("onedark").load()
       end,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-storm",
+      colorscheme = "onedark",
     },
   },
 
