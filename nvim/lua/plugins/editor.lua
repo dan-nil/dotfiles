@@ -100,6 +100,12 @@ return {
     opts = {},
   },
   {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
     "sindrets/diffview.nvim",
     dependencies = "nvim-tree/nvim-web-devicons",
     cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
