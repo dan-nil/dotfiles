@@ -1,34 +1,12 @@
 return {
   {
-    "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      style = "dark",
-    },
-  },
-  {
-    "f-person/auto-dark-mode.nvim",
-    lazy = false,
-    priority = 998,
-    opts = {
-      update_interval = 3000,
-      set_dark_mode = function()
-        vim.o.background = "dark"
-        require("onedark").setup({ style = "dark" })
-        require("onedark").load()
-      end,
-      set_light_mode = function()
-        vim.o.background = "light"
-        require("onedark").setup({ style = "light" })
-        require("onedark").load()
-      end,
-    },
+    "dracula/vim",
+    name = "dracula",
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "dracula",
     },
   },
 
