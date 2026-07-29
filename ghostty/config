@@ -1,5 +1,5 @@
 # Theme and appearance
-theme = dark:Atom One Dark,light:Atom One Light
+theme = Dracula
 background-opacity = 1
 background-blur = true
 
@@ -9,7 +9,7 @@ macos-titlebar-proxy-icon = visible
 macos-titlebar-style = tabs
 
 # Font
-font-family = BlexMono Nerd Font
+font-family = Fira Code
 font-size = 17
 font-thicken = true
 font-thicken-strength = 96
