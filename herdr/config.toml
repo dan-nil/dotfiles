@@ -1,0 +1,20 @@
+onboarding = false
+
+[theme]
+name = "dracula"
+
+[theme.custom]
+surface_dim = "#77405f"
+
+[ui.sound]
+enabled = false
+
+[keys]
+previous_workspace = "prefix+["
+next_workspace = "prefix+]"
+switch_tab = "prefix+1..9"
+focus_agent = "prefix+ctrl+1..9"
+
+[ui]
+show_agent_labels_on_pane_borders = false
+agent_panel_scope = "all"
